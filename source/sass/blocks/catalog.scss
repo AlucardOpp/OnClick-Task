@@ -10,7 +10,18 @@
   &__img {
     height: 250px;
     margin-bottom: 10px;
-    display: block;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 18px;
+
+    @include hover {
+      &:hover {
+        & img {
+          transform: scale(1.3);
+        }
+      }
+    }
 
     @media (max-width: 1490px) {
       height: 200px;
@@ -29,8 +40,10 @@
     }
 
     & img {
-      border-radius: 18px;
+      border-radius: inherit;
       object-fit: cover;
+      transition: transform 0.5s ease;
+      height: 100%;
     }
   }
 
