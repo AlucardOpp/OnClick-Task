@@ -56,7 +56,7 @@
       padding: 0 10px;
     }
 
-    @media (max-width: 992px) {
+    @media (max-width: 1220px) {
       width: 33%;
     }
 
@@ -77,17 +77,6 @@
     }
   }
 
-  &__title {
-    margin-right: 4px;
-    text-transform: uppercase;
-    color: #1a3c55;
-    font-size: 19.2px;
-
-    @media (max-width: 767px) {
-      font-size: 14px;
-    }
-  }
-
   &__number {
     @media (max-width: 767px) {
       font-size: 12px;
@@ -100,77 +89,19 @@
     align-items: center;
   }
 
-  &__info-main {
+  &__title {
     text-align: center;
+    margin-right: 4px;
+    text-transform: uppercase;
+    color: #1a3c55;
+    font-size: 19.2px;
+
+    @media (max-width: 1220px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
   }
-}
-
-.ind-catalog_tile .ind-catalog_tile_category_title {
-  padding-bottom: 14px;
-  border-bottom: 1px solid #e5e5e5;
-  font-size: 24px;
-}
-.ind-catalog_tile .ind-catalog_tile_category_title a {
-  text-decoration: none;
-}
-.ind-catalog_tile .ind-catalog_tile_ul {
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-.ind-catalog_tile .ind-catalog_tile_ul li {
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  padding: 0 10px;
-  width: 25%;
-  text-align: center;
-}
-.ind-catalog_tile .ind-catalog_tile_ul li:before {
-  content: '' !important;
-}
-// .ind-catalog_tile .ind-catalog_tile_ul li:nth-child(8n+1) {
-//   clear: both;
-// }
-.ind-catalog_tile .ind-catalog_tile_img {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0 auto;
-  width: 100%;
-  height: 250px;
-  border-radius: 18px;
-}
-
-.ind-catalog_tile .ind-catalog_tile_img img {
-  border-radius: inherit;
-  object-fit: cover;
-  object-position: center;
-  height: 100%;
-}
-
-.ind-catalog_tile .ind-catalog_tile_title {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  padding: 0;
-  vertical-align: top;
-  font-size: 17.6px;
-  line-height: 20.8px;
-  font-weight: 480;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-.ind-catalog_tile .ind-catalog_tile_title h2 {
-  margin: 0;
-  color: #1a3c55;
-  font-size: 19.2px;
-}
-.ind-catalog_tile .ind-catalog_tile_title a:hover {
-  text-decoration: none;
-}
-.ind-catalog_tile .ind-catalog_tile_title span {
-  font-size: 0.8rem;
-  line-height: 19.2px;
 }

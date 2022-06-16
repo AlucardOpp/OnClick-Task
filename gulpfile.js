@@ -103,7 +103,6 @@ const createWebp = () => {
 
 const copy = () => {
   return gulp.src([
-    'source/fonts/**',
     'source/img/**',
     'source/data/**',
     'source/favicon/**',
@@ -134,7 +133,7 @@ const syncServer = () => {
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css));
   gulp.watch('source/js/**/*.{js,json}', gulp.series(js, refresh));
   gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));
-  gulp.watch('source/img/**/*.svg', gulp.series(copySvg, sprite, pugToHtml, refresh));
+  // gulp.watch('source/img/**/*.svg', gulp.series(copySvg, sprite, pugToHtml, refresh));
   gulp.watch('source/img/**/*.{png,jpg,webp}', gulp.series(copyImages, pugToHtml, refresh));
 
   gulp.watch('source/favicon/**', gulp.series(copy, refresh));
@@ -148,9 +147,9 @@ const refresh = (done) => {
   done();
 };
 
-const start = gulp.series(clean, svgo, copy, css, sprite, js, pugToHtml, syncServer);
+const start = gulp.series(clean, copy, css, pugToHtml, syncServer);
 
-const build = gulp.series(clean, svgo, copy, css, sprite, js, pugToHtml, optimizeImages);
+const build = gulp.series(clean, copy, css, pugToHtml, optimizeImages);
 
 exports.imagemin = optimizeImages;
 exports.webp = createWebp;

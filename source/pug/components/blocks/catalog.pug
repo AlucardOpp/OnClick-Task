@@ -2,11 +2,10 @@ mixin catalog()
   .sections
     ul.sections__list
       each item in catalog
-        li(class="sections__elem" id=item.id)
+        li(class="sections__elem")
           a(href=item.href).sections__img
             img(src=`img/content/${item.img}.jpg` width=1200, height=900, alt="Текст")
           .sections__info
-            a(href=item.href).sections__info-main
-              span.sections__title!=item.title
+            a(href=item.href).sections__title!=item.title
               span.sections__number!=`(${item.number})`
             p.sections__text!=(item.text) ? item.text : null
