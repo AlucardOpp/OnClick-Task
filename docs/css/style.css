@@ -610,9 +610,9 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1680px;
+  padding: 10px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .header {
@@ -1253,6 +1253,63 @@ button,
   opacity: 1;
 }
 
+.sections__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.sections__img {
+  height: 250px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.sections__img img {
+  border-radius: 18px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.sections__elem {
+  width: 25%;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.sections__text {
+  margin: 10px 0 0 0;
+}
+
+.sections__title {
+  margin-right: 4px;
+  text-transform: uppercase;
+  color: #1a3c55;
+  font-size: 19.2px;
+}
+
+.sections__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sections__info-main {
+  text-align: center;
+}
+
 .ind-catalog_tile .ind-catalog_tile_category_title {
   padding-bottom: 14px;
   border-bottom: 1px solid #e5e5e5;
@@ -1365,6 +1422,72 @@ button,
   }
 }
 
+@media screen and (max-width: 1680px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .sections__elem {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 1490px) {
+  .sections__img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 1340px) {
+  .sections__img {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .sections__img {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+@media (max-width: 992px) {
+  .sections__elem {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
   .modal__wrapper {
     padding: 60px 16px;
@@ -1376,6 +1499,32 @@ button,
   }
 
   .modal--fit-content .modal__content {
+    width: 100%;
+  }
+
+  .sections__img {
+    height: auto;
+  }
+
+  .sections__elem {
+    width: 50%;
+  }
+
+  .sections__text {
+    font-size: 12px;
+  }
+
+  .sections__title {
+    font-size: 14px;
+  }
+
+  .sections__number {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 580px) {
+  .sections__elem {
     width: 100%;
   }
 }
