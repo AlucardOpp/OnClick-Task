@@ -628,15 +628,15 @@ button,
   }
 }
 
-@media (max-width: 1490px) {
-  .sections__img {
-    height: 200px;
+@media screen and (max-width: 1490px) {
+  .container {
+    max-width: 1240px;
   }
 }
 
-@media screen and (max-width: 1480px) {
-  .container {
-    max-width: 1240px;
+@media (max-width: 1490px) {
+  .sections__img {
+    height: 225px;
   }
 }
 
@@ -648,7 +648,7 @@ button,
 
 @media (max-width: 1340px) {
   .sections__img {
-    height: 180px;
+    height: 200px;
   }
 }
 
@@ -660,7 +660,7 @@ button,
 
 @media (max-width: 1220px) {
   .sections__img {
-    height: 160px;
+    height: 175px;
   }
 
   .sections__elem {
