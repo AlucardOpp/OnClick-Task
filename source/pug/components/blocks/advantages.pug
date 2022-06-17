@@ -1,0 +1,12 @@
+mixin advantages()
+  .content-info
+    .content-info__advantages-img
+      img(src=`img/content/mobile.png` width=270, height=490, alt="Текст")
+    ul.content-info__advantages
+      each item in advantages
+        li.content-info__advantage
+          .content-info__advantage-icon
+            img(src=`img/content/mobile-phone.png` width=36, height=36, alt="Текст")
+          .content-info__text-content
+            span.content-info__advantage-title!=item.title
+            span.content-info__advantage-text!=item.text
