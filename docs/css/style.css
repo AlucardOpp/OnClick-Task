@@ -629,7 +629,7 @@ button,
 }
 
 .content-info {
-  margin-bottom: 20px;
+  margin-bottom: 80px;
   position: relative;
 }
 
@@ -673,6 +673,18 @@ button,
   font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.content-info__description {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 1.25rem;
+}
+
+.content-info__title {
+  font-size: 3rem;
+  line-height: 3.625rem;
+  margin: 0;
 }
 
 .content-info__cases {
@@ -728,6 +740,22 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.content-info__advantages--column {
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  row-gap: 1.25rem;
+}
+
+.content-info__advantages--column .content-info__advantage-title {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.content-info__advantages--column .content-info__advantage-text {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .content-info__advantage {
@@ -868,6 +896,11 @@ button,
   .content-info__advantages {
     -ms-grid-columns: (50%)[2];
     grid-template-columns: repeat(2, 50%);
+  }
+
+  .content-info__advantages--column {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .content-info__advantage {

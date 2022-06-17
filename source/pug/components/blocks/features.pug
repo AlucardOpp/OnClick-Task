@@ -1,0 +1,17 @@
+mixin features()
+  .content-info
+    .content-info__list
+      .content-info__item
+        .content-info__img
+          img(src=`img/content/content-22.png` width=510, height=557, alt="Текст")
+      .content-info__item
+        h3.content-info__title!="Сайты по технологии MATEX"
+        .content-info__description!="Сочетание передовых web-решений и маркетинговых технологий"
+        ul.content-info__advantages.content-info__advantages--column
+          each item in features
+            li.content-info__advantage
+              .content-info__advantage-icon
+                img(src=`img/content/mobile-phone.png` width=36, height=36, alt="Текст")
+              .content-info__text-content
+                span.content-info__advantage-title!=item.title
+                span.content-info__advantage-text!=item.text
