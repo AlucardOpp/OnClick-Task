@@ -11,7 +11,7 @@
 @import "variables";
 @import "mixins";
 // @import "functions";
-// @import "global/fonts";
+@import "global/fonts";
 @import "global/reboot";
 // @import "global/utils";
 @import "global/container";
@@ -27,7 +27,8 @@
 // @import "blocks/custom-input";
 // @import "blocks/custom-toggle";
 // @import "blocks/custom-select";
-@import "blocks/catalog";
+@import "blocks/sections";
+@import "blocks/cases";
 
 // ---------------------------------
 

@@ -103,6 +103,7 @@ const createWebp = () => {
 
 const copy = () => {
   return gulp.src([
+    'source/fonts/**',
     'source/img/**',
     'source/data/**',
     'source/favicon/**',
