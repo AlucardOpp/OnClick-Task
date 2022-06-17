@@ -683,7 +683,7 @@ button,
   color: #00adec;
 }
 
-.content-info__case {
+.content-info__subcase {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,7 +692,7 @@ button,
   align-items: center;
 }
 
-.content-info__case:not(:last-of-type) {
+.content-info__subcase:not(:last-of-type) {
   margin-bottom: 0.625rem;
 }
 
