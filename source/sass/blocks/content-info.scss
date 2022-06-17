@@ -83,8 +83,8 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    max-width: 270px;
-    max-height: 490px;
+    max-width: 16.875rem;
+    max-height: 30.625rem;
 
     @media (max-width: 990px) {
       display: none;
@@ -97,7 +97,7 @@
     padding: 0;
     display: grid;
     grid-template-columns: repeat(2, 33.3%);
-    row-gap: 40px;
+    row-gap: 2.5rem;
     justify-content: space-between;
 
     @media (max-width: 990px) {
@@ -106,7 +106,7 @@
 
     @media (max-width: 767px) {
       grid-template-columns: 1fr;
-      row-gap: 20px;
+      row-gap: 1.25rem;
     }
   }
 
@@ -136,18 +136,18 @@
   }
 
   &__advantage-icon {
-    min-width: 36px;
-    min-height: 36px;
-    margin-right: 20px;
+    min-width: 2.25rem;
+    min-height: 2.25rem;
+    margin-right: 1.25rem;
 
     @media (max-width: 990px) {
       margin-right: 0;
-      margin-bottom: 15px;
+      margin-bottom: 0.9375rem;
     }
 
     & img {
-      width: 36px;
-      height: 36px;
+      width: 2.25rem;
+      height: 2.25rem;
     }
   }
 }
