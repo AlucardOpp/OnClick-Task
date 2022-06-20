@@ -19,6 +19,7 @@
     grid-template-columns: 42px 1fr;
     color: #285d84;
     transition: opacity 0.3s ease;
+    word-break: break-word;
 
     &:hover {
       opacity: 0.7;
@@ -40,7 +41,11 @@
   }
 
   &__file-name {
-    text-decoration: underline dashed;
-    text-underline-offset: 5px;
+    margin: 0;
+
+    & span {
+      text-decoration: underline dashed;
+      text-underline-offset: 5px;
+    }
   }
 }

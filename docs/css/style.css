@@ -2813,6 +2813,7 @@ button,
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  word-break: break-word;
 }
 
 .news__file:hover {
@@ -2841,6 +2842,10 @@ button,
 }
 
 .news__file-name {
+  margin: 0;
+}
+
+.news__file-name span {
   -webkit-text-decoration: underline dashed;
   text-decoration: underline dashed;
   text-underline-offset: 5px;

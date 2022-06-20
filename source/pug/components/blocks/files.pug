@@ -6,5 +6,5 @@ mixin files()
           i(class="news__file-icon", class=item.icon)
           .news__file-text
             span!=item.text
-            span.news__file-name #{item.fileName} — #[i!="размер Кб"]
+            p.news__file-name #[span!=item.fileName] #[i!=" — размер Кб"]
 
