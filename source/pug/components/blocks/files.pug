@@ -1,0 +1,10 @@
+mixin files()
+  ul.news__files-list
+    each item in files
+      li.news__file-item
+        a(href="#" class="news__file file").news__file-link
+          i(class="news__file-icon", class=item.icon)
+          .news__file-text
+            span!=item.text
+            span.news__file-name #{item.fileName} — #[i!="размер Кб"]
+
