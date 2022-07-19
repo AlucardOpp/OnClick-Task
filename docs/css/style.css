@@ -990,12 +990,12 @@ button,
   background: #fdd816;
 }
 
-#bigwall .case {
+.wall--bigwall .case {
   max-width: none;
 }
 
 .wall__list--bigwall .wall__text {
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 
 .wall__list--bigwall .wall__item {
@@ -1007,7 +1007,9 @@ button,
 }
 
 .wall__list--bigwall .wall__name h2 {
-  font-size: 2.47rem;
+  margin-top: 5rem;
+  font-size: 2.31rem;
+  line-height: 3.2256rem;
 }
 
 .wall__list--bigwall .wall__item.wall__item--reverse .wall__img {
@@ -1018,12 +1020,12 @@ button,
 
 .wall__list--bigwall .wall__item.wall__item--reverse .wall__info {
   width: auto;
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 5rem;
 }
 
 .wall__list--bigwall .wall__info {
   width: auto;
-  padding: 0 2rem 0 0;
+  padding: 0 5rem 0 0;
 }
 
 .wall__list--bigwall .wall__img {
@@ -1313,8 +1315,21 @@ button,
 
 @media screen and (max-width: 1340px) {
   .wall__list--bigwall .wall__name h2 {
-    font-size: 2.304rem;
-    line-height: 3.2256rem;
+    font-size: 2.16rem;
+    line-height: 3.024rem;
+    margin-top: 3rem;
+  }
+
+  .wall__list--bigwall .wall__item.wall__item--reverse .wall__info {
+    padding: 0 0 0 3rem;
+  }
+
+  .wall__list--bigwall .wall__info {
+    padding: 0 3rem 0 0;
+  }
+
+  .wall__list--bigwall .wall__text {
+    margin-bottom: 3rem;
   }
 }
 
@@ -1402,14 +1417,24 @@ button,
     min-height: 23.125rem;
   }
 
+  .wall__list--bigwall .wall__item.wall__item--reverse .wall__info {
+    padding: 0 0 0 2rem;
+  }
+
+  .wall__list--bigwall .wall__info {
+    padding: 0 2rem 0 0;
+  }
+
   .wall__list--bigwall .wall__name h2 {
     font-size: 1.296rem;
     line-height: 1.8144rem;
+    margin-top: 2rem;
   }
 
   .wall__list--bigwall .wall__text {
     font-size: 0.9rem;
     line-height: 1.62rem;
+    margin-bottom: 2rem;
   }
 
   .wall__list--bigwall .wall__button {

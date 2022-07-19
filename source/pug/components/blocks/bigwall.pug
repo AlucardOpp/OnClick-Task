@@ -1,5 +1,5 @@
 mixin bigwall()
-  .ind-block(id="bigwall")
+  .ind-block.wall.wall--bigwall
     .case
       .block__title
         h2!="Внедряем передовые технологии"
@@ -10,8 +10,8 @@ mixin bigwall()
               h2!="Современное оборудование"
             .wall__text!="Оснащены современным оборудованием лучших мировых производителей."
             a.wall__button.button.--blue(data-popup='' href='/company/')!="О компании"
-          .wall__img.bgw
-            img(alt='Современное оборудование' src='img/content/technology.jpg' loading='lazy')
+          a(href="#").wall__img.bgw
+            img(alt='Современное оборудование' src='img/content/gallery-2-1.jpg' loading='lazy')
         .wall__item.wall__item--reverse
           .wall__info
             .wall__name.h2
