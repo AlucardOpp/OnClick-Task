@@ -17,7 +17,10 @@ html(lang="ru")
     //- используйте только для шрифта находящегося на первом экране
     link(rel="preload", href="fonts/fontawesome-webfont.woff", as="font", crossorigin="anonymous")
     link(rel="stylesheet", href="css/style.min.css")
-
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet")
   body
     .wrapper(class=wrapperMods)
       if (hasHeader)
