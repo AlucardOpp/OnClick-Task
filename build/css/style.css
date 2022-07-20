@@ -1047,7 +1047,7 @@ button,
 }
 
 .wall--assimetr .block__title {
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
 }
 
 .wall--assimetr .wall__list {
@@ -1065,7 +1065,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-bottom: 20rem;
+  margin-bottom: 6rem;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -1075,7 +1075,7 @@ button,
 }
 
 .wall--assimetr .wall__item:nth-child(odd) {
-  margin-top: -10rem;
+  margin-top: -8rem;
 }
 
 .wall--assimetr .wall__img {
