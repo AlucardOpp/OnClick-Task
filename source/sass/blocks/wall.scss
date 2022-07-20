@@ -1,24 +1,100 @@
+.wall--bigwall,
+.wall--assimetr {
+  & .wall__name h2 {
+    font-size: 2.26rem;
+    line-height: 3.2256rem;
+  }
+
+  & .wall__img {
+    & img:hover {
+      transform: none;
+    }
+  }
+
+  @media screen and (max-width: 1340px) {
+    & .wall__name h2 {
+      font-size: 2.16rem;
+      line-height: 3.024rem;
+    }
+  }
+
+  @media screen and (max-width: 1220px) {
+    & .wall__item {
+      min-height: 24.125rem;
+    }
+
+    & .wall__name h2 {
+      font-size: 1.728rem;
+      line-height: 2.4192rem;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    & .wall__item {
+      min-height: 23.125rem;
+    }
+
+    & .wall__name h2 {
+      font-size: 1.296rem;
+      line-height: 1.8144rem;
+    }
+
+    & .wall__text {
+      font-size: 0.9rem;
+      line-height: 1.8*0.9rem;
+    }
+
+    & .wall__button {
+      padding: 1.2rem 3.5rem;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    & .wall__item {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-bottom: 2.5rem;
+    }
+
+    & .wall__text {
+      font-size: 18px;
+      line-height: 1.5rem;
+    }
+
+    & .wall__name h2 {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    & .wall__name h2 {
+      font-size: 1.2rem;
+      line-height: 2.2rem;
+    }
+
+    & .wall__text {
+      font-size: 16px;
+    }
+
+    & .wall__button {
+      padding: 1rem 2.4rem;
+    }
+  }
+}
+
 .wall--bigwall {
   & .case {
     max-width: none;
   }
-}
 
-.wall__list--bigwall {
   & .wall__text {
     margin-bottom: 5rem;
   }
 
-  & .wall__item {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 0;
-  }
-
   & .wall__name h2 {
     margin-top: 5rem;
-    font-size: 2.26rem;
-    line-height: 3.2256rem;
   }
 
   & .wall__item.wall__item--reverse {
@@ -49,16 +125,10 @@
       width: 100%;
       object-fit: cover;
     }
-
-    & img:hover {
-      transform: none;
-    }
   }
 
   @media screen and (max-width: 1340px) {
     & .wall__name h2 {
-      font-size: 2.16rem;
-      line-height: 3.024rem;
       margin-top: 3rem;
     }
 
@@ -78,25 +148,12 @@
   }
 
   @media screen and (max-width: 1220px) {
-    & .wall__item {
-      min-height: 24.125rem;
-    }
-
-    & .wall__name h2 {
-      font-size: 1.728rem;
-      line-height: 2.4192rem;
-    }
-
     & .wall__img {
       height: 100%;
     }
   }
 
   @media screen and (max-width: 992px) {
-    & .wall__item {
-      min-height: 23.125rem;
-    }
-
     & .wall__item.wall__item--reverse {
       & .wall__info {
         padding: 0 0 0 2rem;
@@ -108,30 +165,15 @@
     }
 
     & .wall__name h2 {
-      font-size: 1.296rem;
-      line-height: 1.8144rem;
       margin-top: 2rem;
     }
 
     & .wall__text {
-      font-size: 0.9rem;
-      line-height: 1.8*0.9rem;
       margin-bottom: 2rem;
-    }
-
-    & .wall__button {
-      padding: 1.2rem 3.5rem;
     }
   }
 
   @media screen and (max-width: 767px) {
-    & .wall__item {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      margin-bottom: 2.5rem;
-    }
-
     & .wall__item.wall__item--reverse {
       & .wall__img {
         left: 0;
@@ -147,14 +189,7 @@
     }
 
     & .wall__text {
-      font-size: 18px;
-      line-height: 1.5rem;
       margin-bottom: 0;
-    }
-
-    & .wall__name h2 {
-      font-size: 2rem;
-      line-height: 3rem;
     }
 
     & .wall__img img {
@@ -165,19 +200,80 @@
       width: calc(100% + 10vw);
     }
   }
+}
 
-  @media screen and (max-width: 580px) {
-    & .wall__name h2 {
-      font-size: 1.2rem;
-      line-height: 2.2rem;
+.wall--assimetr {
+  & .block__title {
+    margin-bottom: 10rem;;
+  }
+
+  & .wall__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+  }
+
+  & .wall__item {
+    flex-direction: column;
+    margin-bottom: 20rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    &:nth-child(odd) {
+      margin-top: -10rem;
+    }
+  }
+
+  & .wall__img {
+    clip-path: none;
+    width: auto;
+
+    & img {
+      height: 100%;
+      // width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & .wall__info {
+    width: auto;
+    order: 2;
+  }
+
+  & .wall__item.wall__item--reverse {
+    & .wall__info {
+      order: 2;
+      width: auto;
+      padding-left: 0;
     }
 
-    & .wall__text {
-      font-size: 16px;
+    & .wall__img {
+      clip-path: none;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    & .wall__list {
+      column-gap: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    & .block__title {
+      margin-bottom: 0;
     }
 
-    & .wall__button {
-      padding: 1rem 2.4rem;
+    & .wall__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    & .wall__item {
+      align-items: center;
+
+      &:nth-child(odd) {
+        margin-top: 0;
+      }
     }
   }
 }
