@@ -216,15 +216,17 @@
 
   & .wall__item {
     flex-direction: column;
-    margin-bottom: 50%;
+    margin-bottom: 0;
     align-items: flex-start;
     justify-content: flex-start;
 
     &:nth-child(even) {
       position: relative;
-      // margin-top: -50%;
-      transform: translateY(-50%);
-      top: 50%;
+      transform: translateY(50%);
+    }
+
+    &:nth-child(odd) {
+      margin-bottom: 14rem;
     }
   }
 
@@ -278,7 +280,10 @@
 
       &:nth-child(even) {
         transform: translateY(0);
-        top: 0;
+      }
+
+      &:nth-child(odd) {
+        margin-bottom: 2.5rem;
       }
     }
   }

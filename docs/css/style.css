@@ -1062,7 +1062,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-bottom: 50%;
+  margin-bottom: 0;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -1073,10 +1073,13 @@ button,
 
 .wall--assimetr .wall__item:nth-child(even) {
   position: relative;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  top: 50%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+.wall--assimetr .wall__item:nth-child(odd) {
+  margin-bottom: 14rem;
 }
 
 .wall--assimetr .wall__img {
@@ -1738,7 +1741,10 @@ button,
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
-    top: 0;
+  }
+
+  .wall--assimetr .wall__item:nth-child(odd) {
+    margin-bottom: 2.5rem;
   }
 
   .wall {
