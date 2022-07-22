@@ -96,17 +96,19 @@
   }
 
   &.grids-5 {
-    grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
   }
 }
 
 .listgrid-list.listgrid-vertical {
   &.grids-4 {
-    grid-template-columns: repeat(auto-fit, minmax(273px, 1fr));
+    @media screen and (max-width: 1340px) {
+      grid-template-columns: repeat(auto-fit, minmax(321px, 1fr));
+    }
   }
 
   &.grids-5 {
-    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(243px, 1fr));
   }
 }
 
