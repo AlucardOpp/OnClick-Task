@@ -4,7 +4,7 @@ include ../components
 
 block variables
 
-html(lang="ru")
+html(lang="ru" class="js-priorityNav")
   head
     title= title
     meta(charset="utf-8")
@@ -19,7 +19,7 @@ html(lang="ru")
     link(rel="stylesheet", href="css/style.min.css")
     link(rel="preconnect" href="https://fonts.googleapis.com")
     link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-    link(href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet")
   body
     .wrapper(class=wrapperMods)
@@ -33,5 +33,5 @@ html(lang="ru")
 
     block modals
 
-    //- script(src="js/vendor.min.js")
-    //- script(src="js/main.min.js")
+    script(src="js/vendor.min.js")
+    script(src="js/main.min.js")

@@ -135,7 +135,7 @@ const syncServer = () => {
   gulp.watch('source/js/**/*.{js,json}', gulp.series(js, refresh));
   gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));
   // gulp.watch('source/img/**/*.svg', gulp.series(copySvg, sprite, pugToHtml, refresh));
-  gulp.watch('source/img/**/*.{png,jpg,webp}', gulp.series(copyImages, pugToHtml, refresh));
+  gulp.watch('source/img/**/*.{png,jpg,webp,svg}', gulp.series(copyImages, pugToHtml, refresh));
 
   gulp.watch('source/favicon/**', gulp.series(copy, refresh));
   gulp.watch('source/video/**', gulp.series(copy, refresh));
